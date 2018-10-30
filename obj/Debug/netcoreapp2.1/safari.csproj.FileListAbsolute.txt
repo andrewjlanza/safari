@@ -1,0 +1,14 @@
+/Users/andrewlanza/sdg/unit-3/safari/bin/Debug/netcoreapp2.1/safari.deps.json
+/Users/andrewlanza/sdg/unit-3/safari/bin/Debug/netcoreapp2.1/safari.runtimeconfig.json
+/Users/andrewlanza/sdg/unit-3/safari/bin/Debug/netcoreapp2.1/safari.runtimeconfig.dev.json
+/Users/andrewlanza/sdg/unit-3/safari/bin/Debug/netcoreapp2.1/safari.dll
+/Users/andrewlanza/sdg/unit-3/safari/bin/Debug/netcoreapp2.1/safari.pdb
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.csprojAssemblyReference.cache
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.csproj.CoreCompileInputs.cache
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.RazorAssemblyInfo.cache
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.RazorAssemblyInfo.cs
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.AssemblyInfoInputs.cache
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.AssemblyInfo.cs
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.RazorTargetAssemblyInfo.cache
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.dll
+/Users/andrewlanza/sdg/unit-3/safari/obj/Debug/netcoreapp2.1/safari.pdb
