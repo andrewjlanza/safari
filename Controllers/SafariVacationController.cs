@@ -11,7 +11,11 @@ namespace SafariVacationApi.Controllers
   [ApiController]
   public class SafariVacationController : ControllerBase
   {
-
+    [HttpGet]
+    public ActionResult<IEnumerable<SeenAnimals>> Get()
+    {
+      var db = new SafariVacationContext();
+      return db.SeenAnimals;
+    }
   }
 }
-
