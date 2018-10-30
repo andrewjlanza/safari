@@ -1,10 +1,12 @@
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using safari.Models;
 
-namespace SafariVacationApi.Controllers
+namespace safari.Controllers
 {
 
   [Route("api/[controller]")]
@@ -12,10 +14,10 @@ namespace SafariVacationApi.Controllers
   public class SafariVacationController : ControllerBase
   {
     [HttpGet]
-    public ActionResult<IEnumerable<SeenAnimals>> Get()
+    public ActionResult<IEnumerable<SafariVacation>> Get()
     {
-      var db = new SafariVacationContext();
-      return db.SeenAnimals;
+      var db = new SafariHWContext();
+      return db.SafariVacation;
     }
   }
 }

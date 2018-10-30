@@ -1,13 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using safari.Models;
 
 namespace safari
 {
   public partial class SafariHWContext : DbContext
   {
-    public SafariHWContext(DbContextOptions<SafariHWContext> options)
-        : base(options)
+    public SafariHWContext()
     {
     }
 
@@ -28,7 +28,8 @@ namespace safari
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
 
-      modelBuilder.
-        }
+
+    }
+    public DbSet<SafariVacation> SafariVacation { get; set; }
   }
 }
