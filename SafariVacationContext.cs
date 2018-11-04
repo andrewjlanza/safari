@@ -27,7 +27,11 @@ namespace safari
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+      modelBuilder.Entity<SafariVacation>().HasData(
+      new SafariVacation { Id = -1, Species = "Hyena", CountOfTimesSeen = 3, LocationOfLastSeen = "watering hole" },
+      new SafariVacation { Id = -2, Species = "Lelephant", CountOfTimesSeen = 2, LocationOfLastSeen = "Serengeti" }
 
+       );
 
     }
     public DbSet<SafariVacation> SafariVacation { get; set; }
