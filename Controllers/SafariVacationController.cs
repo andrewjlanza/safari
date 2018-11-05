@@ -15,10 +15,16 @@ namespace safari.Controllers
   public class SafariVacationController : ControllerBase
   {
     [HttpGet]
-    public ActionResult<IEnumerable<SafariVacation>> Get()
+    public IEnumerable<Models.SafariVacation> Get()
     {
       var db = new SafariHWContext();
       return db.SafariVacation;
+    }
+    [HttpGet("{location}")]
+    public IEnumerable<SafariVacation> GetByLocation(string location)
+    {
+      var db = new SafariHWContext();
+      return db.SafariVacation.Where(w => w.LocationOfLastSeen.ToLower() == location.ToLower());
     }
     [HttpPost]
     public ActionResult<SafariVacation> Post([FromBody] SafariVacation seenAnimals)
@@ -33,11 +39,11 @@ namespace safari.Controllers
 
       return seenAnimals;
     }
-    [HttpPut("{animalId}")]
-    public ActionResult<SafariVacation> Put([FromQuery] int animalId, [FromBody] SafariVacation updatedData)
+    [HttpPut("{id}")]
+    public ActionResult<SafariVacation> Put([FromRoute] int id, [FromBody] SafariVacation updatedData)
     {
       var db = new SafariHWContext();
-      var animal = db.SafariVacation.FirstOrDefault(f => f.Id == animalId);
+      var animal = db.SafariVacation.FirstOrDefault(f => f.Id == id);
       if (animal != null)
       {
         // update the values
@@ -49,7 +55,7 @@ namespace safari.Controllers
       }
       else
       {
-        return NotFound();
+        return NotFound(new { id, updatedData });
       }
     }
     [HttpDelete("{animalId}")]
